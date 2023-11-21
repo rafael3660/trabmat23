@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <script>
-      
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-<header>
-    <h1>Floppy Bird</h1>
-    <div class="score-container">
-      <div id="bestScore"></div>
-      <div id="currentScore"></div>
+    <h1>Jogo da Forca</h1>
+    <div id="word-display"></div>
+    <div id="guesses">Tentativas restantes: <span id="attempts">6</span></div>
+    <div id="input-section">
+      <label for="letter-input">Digite uma letra: </label>
+      <input type="text" id="letter-input" maxlength="1">
+      <button onclick="guessLetter()">Tentar</button>
     </div>
-  </header>
-
-  <canvas id="canvas" width="431" height="768"></canvas>
+    <script src="script.js"></script>
   </body>
-  </html>
+</html>
